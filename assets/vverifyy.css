@@ -1,0 +1,23 @@
+/* COPYRIGHT ZYKEL 2024 */
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 0; 
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}

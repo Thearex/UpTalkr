@@ -1,0 +1,164 @@
+/* COPYRIGHT ZYKEL 2024 */
+
+
+nav {
+  background-color: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.nav-logo {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.nav-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 16px;
+  transition: color 0.3s;
+  gap: 10px;
+}
+
+.nav-item:hover a {
+  color: #fff;
+}
+
+.nav-title {
+color: #fff;
+font-size: 24px;
+margin-left: 20px;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+}
+
+li {
+margin-left: 20px;
+}
+
+.text {
+text-decoration: none;
+color: #fff;
+padding: 10px 20px;
+border-radius: 30px;
+transition: background-color 0.3s;
+}
+
+.text:hover {
+background-color: #333;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 16px !important;
+}
+
+.search-form input {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 4px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.search-form button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #333;
+}
+
+
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-text {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon-container:hover .icon-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+  .login {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .login a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(#d284ff, #00afff);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+
+  .login a:hover {
+    background: linear-gradient(#d284ff, #00afff);
+  }
+
+.nav-logo span {
+  margin-right: 3 !important;
+  display: flex;
+  align-items: center;
+}

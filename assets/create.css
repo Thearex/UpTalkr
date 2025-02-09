@@ -1,0 +1,274 @@
+/* COPYRIGHT ZYKEL 2024 */
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+body {
+	background: linear-gradient(to right, #3498db, #2ecc71, #f1c40f);
+	color: #333;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	background-size: 400% 400%;
+	animation: gradientMovement 15s infinite linear;
+	margin: 0;
+}
+
+.container {
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s;
+}
+
+		h1 {
+			font-size: 28px;
+			margin-bottom: 20px;
+			color: #333;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		input[type="text"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+			font-size: 16px;
+			transition: border-color 0.3s;
+		}
+
+		input[type="text"]:focus,
+		textarea:focus {
+			border-color: #3498db;
+		}
+
+		.custom-upload-btn {
+			display: block;
+			width: 100%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			font-size: 16px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.custom-upload-btn:hover {
+			background-color: #45a049;
+		}
+
+		.custom-upload-btn:disabled {
+			background-color: #ccc;
+			cursor: not-allowed;
+		}
+
+		body {
+			background-size: 400% 400%;
+			animation: gradientMovement 15s infinite linear;
+		}
+
+		@keyframes gradientMovement {
+			0% {
+				background-position: 0 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0 50%;
+			}
+		}
+
+nav {
+    background-color: #fff;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+  }
+  
+  .nav-logo {
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .nav-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 16px;
+    transition: color 0.3s;
+    gap: 10px;
+  }
+  
+  .nav-item:hover a {
+    color: #fff;
+  }
+  
+  .nav-title {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 20px;
+  }
+  
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  }
+  
+  li {
+  margin-left: 20px;
+  }
+  
+  .text {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  }
+  
+  .text:hover {
+  background-color: #333;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  
+  .search-form input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 4px;
+  }
+  
+  .load-more-button {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .load-more-button:hover {
+    background-color: #ccc;
+  }
+  
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .search-form button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .search-form button:hover {
+    background-color: #333;
+  }
+  
+  
+  
+  .icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon-text {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .icon-container:hover .icon-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+    .login {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  
+    .login a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(#d284ff, #00afff);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+  
+    .login a:hover {
+      background: linear-gradient(#d284ff, #00afff);
+    }
+  
+  .nav-logo span {
+    margin-right: 3 !important;
+    display: flex;
+    align-items: center;
+  }
+  

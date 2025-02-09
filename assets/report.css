@@ -1,0 +1,70 @@
+/* COPYRIGHT ZYKEL 2024 */
+
+    body {
+        font-family: Verdana, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .report-form {
+        max-width: 400px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px #888888;
+    }
+    .report-form h2 {
+        margin-top: 0;
+    }
+
+    .report-form label {
+        font-weight: bold;
+    }
+
+    .report-form select,
+    .report-form textarea,
+    .report-form input[type="text"],
+    .report-form input[type="email"],
+    .report-form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .report-form select {
+        height: 35px;
+    }
+
+    .report-form textarea {
+        resize: vertical;
+    }
+
+    .report-form input[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .report-form input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .center-recaptcha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-left {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 10px;
+    }

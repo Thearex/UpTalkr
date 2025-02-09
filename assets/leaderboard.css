@@ -1,0 +1,52 @@
+/* COPYRIGHT ZYKEL 2024 */
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        overflow: hidden;
+        color: #333; 
+    }
+    .container, .info-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        position: absolute;
+        z-index: 1;
+    }
+    .info-container {
+        top: calc(50% - 10px);
+        left: 50%;
+        transform: translate(-50%, -100%);
+        width: 200px;
+        font-size: 20px;
+        margin-bottom: 5px; 
+    }
+    .container {
+        top: calc(50% + 10px);
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 300px;
+        margin-top: 5px;
+    }
+    h1 {
+        color: #333;
+        font-size: 24px;
+    }
+    b {
+        font-weight: bold;
+    }
+    #statsTitle {
+        font-size: 24px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .bottom-left {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 10px;
+    }
